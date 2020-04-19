@@ -8,7 +8,6 @@ __author__ = "Lucca Paffi"
 import time
 import scapy.all as scapy
 import optparse
-import subprocess
 
 
 # Helper function to parse CLI arguments
@@ -21,8 +20,8 @@ def get_arguments():
     parser.add_option("-a", "--allow", dest="allow", action='store_true',
                       help="Allow packet forward to the target machine (default)")
     (options, arguments) = parser.parse_args()
-    if not options.target:
-        parser.error("[-] Please specify a target, use --help for more info ")
+    if not options.target or not options.spoof:
+        parser.error("[-] Please specify a target and a spoof address, use --help for more info ")
     else:
         return options
 
