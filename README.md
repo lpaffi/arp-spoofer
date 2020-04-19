@@ -13,7 +13,7 @@ Options:
 -  -t TARGET, --target=TARGET Target IP Address  
 -  -s SPOOF, --spoof=SPOOF    Spoofed IP Address (Usually the gateway)  
 -  -b, --block                 Block packet forwarding to the target machine  
--  -a, --allow                 Allow packet forward to the target machine (default)
+-  -a, --allow                 Allow packet forwarding to the target machine (default)
 
 ### Examples:  
 
